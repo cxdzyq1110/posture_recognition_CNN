@@ -1,0 +1,10 @@
+Output: Report Single Pin Nets
+Type  : SinglePinNetReporter
+From  : Project [PCB_Project2.PrjPCB]
+   Generated File[PCB_Project2.REP]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 14:00:26 On 2018/1/14

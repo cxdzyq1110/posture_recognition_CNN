@@ -1,0 +1,19 @@
+------------------------------------------------------------
+Single Pin Net Report for PCB_Project2.PrjPCB
+-- 2018/1/14
+-- 14:00:26
+------------------------------------------------------------
+
+Net GPIO_1_35 has only one pin (Pin DEx_GPIO_P1-40)
+Net GPIO_1_34 has only one pin (Pin SF_VIP_P2-27)
+Net GPIO_1_33 has only one pin (Pin DEx_GPIO_P1-38)
+Net GPIO_1_32 has only one pin (Pin SF_VIP_P2-25)
+Net GPIO_1_31 has only one pin (Pin DEx_GPIO_P1-36)
+Net GPIO_1_30 has only one pin (Pin SF_VIP_P2-23)
+Net GPIO_1_29 has only one pin (Pin DEx_GPIO_P1-34)
+Net GPIO_1_28 has only one pin (Pin SF_VIP_P2-21)
+Net GPIO_1_27 has only one pin (Pin DEx_GPIO_P1-32)
+Net GPIO_1_26 has only one pin (Pin SF_VIP_P2-19)
+Net GPIO_1_25 has only one pin (Pin DEx_GPIO_P1-28)
+Net GPIO_1_24 has only one pin (Pin SF_VIP_P2-17)
+Net GPIO_1_23 has only one pin (Pin DEx_GPIO_P1-26)

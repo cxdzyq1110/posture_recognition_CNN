@@ -1,0 +1,16 @@
+INTENDED_DEVICE_FAMILY="Cyclone V"
+LPM_HINT=RAM_BLOCK_TYPE=AUTO
+LPM_TYPE=altshift_taps
+NUMBER_OF_TAPS=4
+TAP_DISTANCE=960
+WIDTH=27
+DEVICE_FAMILY="Cyclone V"
+aclr
+clken
+clock
+shiftin
+shiftout
+taps
+taps
+taps
+taps

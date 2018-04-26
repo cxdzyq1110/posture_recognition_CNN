@@ -1,0 +1,150 @@
+Added Component: Designator=DEx_GPIO_P0(HDR2X20)
+Added Component: Designator=DEx_GPIO_P1(HDR2X20)
+Added Component: Designator=SF_VIP_P0(HDR2X16)
+Added Component: Designator=SF_VIP_P1(HDR2X16)
+Added Component: Designator=SF_VIP_P2(HDR2X16)
+Added Pin To Net: NetName=DC3.3V Pin=DEx_GPIO_P0-29
+Added Pin To Net: NetName=DC3.3V Pin=SF_VIP_P0-31
+Added Pin To Net: NetName=DC3.3V Pin=SF_VIP_P0-32
+Added Pin To Net: NetName=DC3.3V Pin=SF_VIP_P1-32
+Added Pin To Net: NetName=DC3.3V Pin=SF_VIP_P2-31
+Added Pin To Net: NetName=DC3.3V Pin=SF_VIP_P2-32
+Added Net: Name=DC3.3V
+Added Pin To Net: NetName=DC5.0V Pin=DEx_GPIO_P0-11
+Added Pin To Net: NetName=DC5.0V Pin=SF_VIP_P0-1
+Added Pin To Net: NetName=DC5.0V Pin=SF_VIP_P0-2
+Added Pin To Net: NetName=DC5.0V Pin=SF_VIP_P1-2
+Added Pin To Net: NetName=DC5.0V Pin=SF_VIP_P2-1
+Added Pin To Net: NetName=DC5.0V Pin=SF_VIP_P2-2
+Added Net: Name=DC5.0V
+Added Pin To Net: NetName=GND Pin=DEx_GPIO_P1-12
+Added Pin To Net: NetName=GND Pin=DEx_GPIO_P1-30
+Added Pin To Net: NetName=GND Pin=SF_VIP_P0-3
+Added Pin To Net: NetName=GND Pin=SF_VIP_P0-4
+Added Pin To Net: NetName=GND Pin=SF_VIP_P0-28
+Added Pin To Net: NetName=GND Pin=SF_VIP_P0-29
+Added Pin To Net: NetName=GND Pin=SF_VIP_P0-30
+Added Pin To Net: NetName=GND Pin=SF_VIP_P1-4
+Added Pin To Net: NetName=GND Pin=SF_VIP_P1-28
+Added Pin To Net: NetName=GND Pin=SF_VIP_P1-30
+Added Pin To Net: NetName=GND Pin=SF_VIP_P2-3
+Added Pin To Net: NetName=GND Pin=SF_VIP_P2-4
+Added Pin To Net: NetName=GND Pin=SF_VIP_P2-28
+Added Pin To Net: NetName=GND Pin=SF_VIP_P2-29
+Added Pin To Net: NetName=GND Pin=SF_VIP_P2-30
+Added Net: Name=GND
+Added Pin To Net: NetName=GPIO_0_0 Pin=DEx_GPIO_P0-1
+Added Pin To Net: NetName=GPIO_0_0 Pin=SF_VIP_P0-5
+Added Net: Name=GPIO_0_0
+Added Pin To Net: NetName=GPIO_0_2 Pin=DEx_GPIO_P0-3
+Added Pin To Net: NetName=GPIO_0_2 Pin=SF_VIP_P0-7
+Added Net: Name=GPIO_0_2
+Added Pin To Net: NetName=GPIO_0_4 Pin=DEx_GPIO_P0-5
+Added Pin To Net: NetName=GPIO_0_4 Pin=SF_VIP_P0-9
+Added Net: Name=GPIO_0_4
+Added Pin To Net: NetName=GPIO_0_6 Pin=DEx_GPIO_P0-7
+Added Pin To Net: NetName=GPIO_0_6 Pin=SF_VIP_P0-11
+Added Net: Name=GPIO_0_6
+Added Pin To Net: NetName=GPIO_0_8 Pin=DEx_GPIO_P0-9
+Added Pin To Net: NetName=GPIO_0_8 Pin=SF_VIP_P0-13
+Added Net: Name=GPIO_0_8
+Added Pin To Net: NetName=GPIO_0_10 Pin=DEx_GPIO_P0-13
+Added Pin To Net: NetName=GPIO_0_10 Pin=SF_VIP_P0-15
+Added Net: Name=GPIO_0_10
+Added Pin To Net: NetName=GPIO_0_12 Pin=DEx_GPIO_P0-15
+Added Pin To Net: NetName=GPIO_0_12 Pin=SF_VIP_P0-17
+Added Net: Name=GPIO_0_12
+Added Pin To Net: NetName=GPIO_0_14 Pin=DEx_GPIO_P0-17
+Added Pin To Net: NetName=GPIO_0_14 Pin=SF_VIP_P0-19
+Added Net: Name=GPIO_0_14
+Added Pin To Net: NetName=GPIO_0_16 Pin=DEx_GPIO_P0-19
+Added Pin To Net: NetName=GPIO_0_16 Pin=SF_VIP_P0-21
+Added Net: Name=GPIO_0_16
+Added Pin To Net: NetName=GPIO_0_18 Pin=DEx_GPIO_P0-21
+Added Pin To Net: NetName=GPIO_0_18 Pin=SF_VIP_P0-23
+Added Net: Name=GPIO_0_18
+Added Pin To Net: NetName=GPIO_0_20 Pin=DEx_GPIO_P0-23
+Added Pin To Net: NetName=GPIO_0_20 Pin=SF_VIP_P0-25
+Added Net: Name=GPIO_0_20
+Added Pin To Net: NetName=GPIO_0_22 Pin=DEx_GPIO_P0-25
+Added Pin To Net: NetName=GPIO_0_22 Pin=SF_VIP_P0-27
+Added Net: Name=GPIO_0_22
+Added Pin To Net: NetName=GPIO_0_24 Pin=DEx_GPIO_P0-27
+Added Pin To Net: NetName=GPIO_0_24 Pin=SF_VIP_P2-5
+Added Net: Name=GPIO_0_24
+Added Pin To Net: NetName=GPIO_0_26 Pin=DEx_GPIO_P0-31
+Added Pin To Net: NetName=GPIO_0_26 Pin=SF_VIP_P2-7
+Added Net: Name=GPIO_0_26
+Added Pin To Net: NetName=GPIO_0_28 Pin=DEx_GPIO_P0-33
+Added Pin To Net: NetName=GPIO_0_28 Pin=SF_VIP_P2-9
+Added Net: Name=GPIO_0_28
+Added Pin To Net: NetName=GPIO_0_30 Pin=DEx_GPIO_P0-35
+Added Pin To Net: NetName=GPIO_0_30 Pin=SF_VIP_P2-11
+Added Net: Name=GPIO_0_30
+Added Pin To Net: NetName=GPIO_0_32 Pin=DEx_GPIO_P0-37
+Added Pin To Net: NetName=GPIO_0_32 Pin=SF_VIP_P2-13
+Added Net: Name=GPIO_0_32
+Added Pin To Net: NetName=GPIO_0_34 Pin=DEx_GPIO_P0-39
+Added Pin To Net: NetName=GPIO_0_34 Pin=SF_VIP_P2-15
+Added Net: Name=GPIO_0_34
+Added Pin To Net: NetName=GPIO_1_1 Pin=DEx_GPIO_P1-2
+Added Pin To Net: NetName=GPIO_1_1 Pin=SF_VIP_P1-6
+Added Net: Name=GPIO_1_1
+Added Pin To Net: NetName=GPIO_1_3 Pin=DEx_GPIO_P1-4
+Added Pin To Net: NetName=GPIO_1_3 Pin=SF_VIP_P1-8
+Added Net: Name=GPIO_1_3
+Added Pin To Net: NetName=GPIO_1_5 Pin=DEx_GPIO_P1-6
+Added Pin To Net: NetName=GPIO_1_5 Pin=SF_VIP_P1-10
+Added Net: Name=GPIO_1_5
+Added Pin To Net: NetName=GPIO_1_7 Pin=DEx_GPIO_P1-8
+Added Pin To Net: NetName=GPIO_1_7 Pin=SF_VIP_P1-12
+Added Net: Name=GPIO_1_7
+Added Pin To Net: NetName=GPIO_1_9 Pin=DEx_GPIO_P1-10
+Added Pin To Net: NetName=GPIO_1_9 Pin=SF_VIP_P1-14
+Added Net: Name=GPIO_1_9
+Added Pin To Net: NetName=GPIO_1_11 Pin=DEx_GPIO_P1-14
+Added Pin To Net: NetName=GPIO_1_11 Pin=SF_VIP_P1-16
+Added Net: Name=GPIO_1_11
+Added Pin To Net: NetName=GPIO_1_13 Pin=DEx_GPIO_P1-16
+Added Pin To Net: NetName=GPIO_1_13 Pin=SF_VIP_P1-18
+Added Net: Name=GPIO_1_13
+Added Pin To Net: NetName=GPIO_1_15 Pin=DEx_GPIO_P1-18
+Added Pin To Net: NetName=GPIO_1_15 Pin=SF_VIP_P1-20
+Added Net: Name=GPIO_1_15
+Added Pin To Net: NetName=GPIO_1_17 Pin=DEx_GPIO_P1-20
+Added Pin To Net: NetName=GPIO_1_17 Pin=SF_VIP_P1-22
+Added Net: Name=GPIO_1_17
+Added Pin To Net: NetName=GPIO_1_19 Pin=DEx_GPIO_P1-22
+Added Pin To Net: NetName=GPIO_1_19 Pin=SF_VIP_P1-24
+Added Net: Name=GPIO_1_19
+Added Pin To Net: NetName=GPIO_1_21 Pin=DEx_GPIO_P1-24
+Added Pin To Net: NetName=GPIO_1_21 Pin=SF_VIP_P1-26
+Added Net: Name=GPIO_1_21
+Added Pin To Net: NetName=GPIO_1_23 Pin=DEx_GPIO_P1-26
+Added Net: Name=GPIO_1_23
+Added Pin To Net: NetName=GPIO_1_24 Pin=SF_VIP_P2-17
+Added Net: Name=GPIO_1_24
+Added Pin To Net: NetName=GPIO_1_25 Pin=DEx_GPIO_P1-28
+Added Net: Name=GPIO_1_25
+Added Pin To Net: NetName=GPIO_1_26 Pin=SF_VIP_P2-19
+Added Net: Name=GPIO_1_26
+Added Pin To Net: NetName=GPIO_1_27 Pin=DEx_GPIO_P1-32
+Added Net: Name=GPIO_1_27
+Added Pin To Net: NetName=GPIO_1_28 Pin=SF_VIP_P2-21
+Added Net: Name=GPIO_1_28
+Added Pin To Net: NetName=GPIO_1_29 Pin=DEx_GPIO_P1-34
+Added Net: Name=GPIO_1_29
+Added Pin To Net: NetName=GPIO_1_30 Pin=SF_VIP_P2-23
+Added Net: Name=GPIO_1_30
+Added Pin To Net: NetName=GPIO_1_31 Pin=DEx_GPIO_P1-36
+Added Net: Name=GPIO_1_31
+Added Pin To Net: NetName=GPIO_1_32 Pin=SF_VIP_P2-25
+Added Net: Name=GPIO_1_32
+Added Pin To Net: NetName=GPIO_1_33 Pin=DEx_GPIO_P1-38
+Added Net: Name=GPIO_1_33
+Added Pin To Net: NetName=GPIO_1_34 Pin=SF_VIP_P2-27
+Added Net: Name=GPIO_1_34
+Added Pin To Net: NetName=GPIO_1_35 Pin=DEx_GPIO_P1-40
+Added Net: Name=GPIO_1_35
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

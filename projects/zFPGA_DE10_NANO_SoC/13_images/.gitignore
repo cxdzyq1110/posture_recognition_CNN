@@ -1,0 +1,8 @@
+burn_sof_jic/*.jic
+burn_sof_jic/*.sof
+burn_sof_jic/*.rbf
+preloader-uboot/software
+sdcard/*.rbf
+sdcard/*.dtb
+sdcard/zImage
+sdcard/*.scr

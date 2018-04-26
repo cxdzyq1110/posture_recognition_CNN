@@ -1,0 +1,513 @@
+[H[Jopen inst.txt sucessfully...
+sending npu instructions...
+npu insts emission finished...
+setting CNN parameters...
+cnn parameters initiateion finished...
+testing-CNN mode...
+testing our CNN module...
+--------
+sp-239-label-5.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000001 ]
+[squat] ==> 	 0.9993 [ 0000FFD1 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0631 [ 00001027 ]
+
+npu_inst finished! total time: 0.000131 sec, npu-time = 0.302178 sec [02671749]
+--------
+sp-245-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.003047 sec, npu-time = 0.299253 sec [026122EF]
+--------
+sp-209-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000002 ]
+[waving] ==> 	 0.9999 [ 0000FFF9 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0001 [ 00000009 ]
+[walking] ==> 	 0.0000 [ 00000003 ]
+
+npu_inst finished! total time: 0.000128 sec, npu-time = 0.299423 sec [02617B3B]
+--------
+sp-206-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0065 [ 000001A9 ]
+[squat] ==> 	 0.9937 [ 0000FE60 ]
+[standing] ==> 	 0.0220 [ 000005A4 ]
+[walking] ==> 	 0.0498 [ 00000CBE ]
+
+npu_inst finished! total time: 0.000121 sec, npu-time = 0.299192 sec [02610343]
+--------
+sp-213-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.9997 [ 0000FFEF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0013 [ 00000053 ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.298568 sec [025FBDC7]
+--------
+sp-220-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0002 [ 0000000E ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.7203 [ 0000B868 ]
+[squat] ==> 	 0.0014 [ 0000005D ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000002 ]
+
+npu_inst finished! total time: 0.000108 sec, npu-time = 0.299555 sec [0261C05F]
+--------
+sp-233-label-5.list
+-------- * * * ------------
+[bending] ==> 	 0.0003 [ 00000016 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000003 ]
+[standing] ==> 	 0.0013 [ 00000056 ]
+[walking] ==> 	 0.9416 [ 0000F10F ]
+
+npu_inst finished! total time: 0.000114 sec, npu-time = 0.299560 sec [0261C299]
+--------
+sp-223-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.9304 [ 0000EE30 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000002 ]
+[squat] ==> 	 0.3083 [ 00004EEA ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0440 [ 00000B46 ]
+
+npu_inst finished! total time: 0.000128 sec, npu-time = 0.298951 sec [026085A9]
+--------
+sp-216-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.9972 [ 0000FF49 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0004 [ 0000001D ]
+[squat] ==> 	 0.0008 [ 00000037 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000105 sec, npu-time = 0.299107 sec [0260D6CF]
+--------
+sp-200-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0001 [ 00000009 ]
+[waving] ==> 	 0.6722 [ 0000AC16 ]
+[squat] ==> 	 0.9183 [ 0000EB17 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0001 [ 00000009 ]
+
+npu_inst finished! total time: 0.000107 sec, npu-time = 0.299336 sec [02614E13]
+--------
+sp-244-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.9999 [ 0000FFFB ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.1129 [ 00001CE4 ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.298657 sec [025FEC87]
+--------
+sp-202-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.1408 [ 0000240E ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.9575 [ 0000F51C ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0004 [ 00000017 ]
+
+npu_inst finished! total time: 0.000242 sec, npu-time = 0.299017 sec [0260A81F]
+--------
+sp-214-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 1.0000 [ 0000FFFF ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000105 sec, npu-time = 0.299257 sec [026124B3]
+--------
+sp-232-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000110 sec, npu-time = 0.299405 sec [0261721B]
+--------
+sp-237-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000001 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.8065 [ 0000CE77 ]
+[squat] ==> 	 0.0002 [ 00000010 ]
+[standing] ==> 	 0.0009 [ 0000003E ]
+[walking] ==> 	 0.4091 [ 000068B8 ]
+
+npu_inst finished! total time: 0.000109 sec, npu-time = 0.299174 sec [0260F9EB]
+--------
+sp-236-label-2.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000002 ]
+[waving] ==> 	 1.0000 [ 0000FFFF ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0002 [ 0000000E ]
+
+npu_inst finished! total time: 0.000110 sec, npu-time = 0.299069 sec [0260C2D9]
+--------
+sp-201-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0004 [ 00000017 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.9129 [ 0000E9B2 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.3463 [ 000058A9 ]
+
+npu_inst finished! total time: 0.000115 sec, npu-time = 0.299398 sec [02616E8D]
+--------
+sp-218-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0096 [ 00000275 ]
+
+npu_inst finished! total time: 0.000112 sec, npu-time = 0.298850 sec [026050B3]
+--------
+sp-221-label-2.list
+-------- * * * ------------
+[bending] ==> 	 0.0002 [ 0000000B ]
+[null] ==> 	 0.0001 [ 00000008 ]
+[waving] ==> 	 1.0000 [ 0000FFFF ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000001 ]
+
+npu_inst finished! total time: 0.000118 sec, npu-time = 0.299147 sec [0260EBA7]
+--------
+sp-208-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0012 [ 0000004C ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.9998 [ 0000FFF0 ]
+[walking] ==> 	 0.0000 [ 00000001 ]
+
+npu_inst finished! total time: 0.000117 sec, npu-time = 0.298864 sec [0260584D]
+--------
+sp-234-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.9997 [ 0000FFEC ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000114 sec, npu-time = 0.299089 sec [0260CD9F]
+--------
+sp-242-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.9334 [ 0000EEF3 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000002 ]
+[squat] ==> 	 0.4963 [ 00007F0C ]
+[standing] ==> 	 0.0002 [ 0000000A ]
+[walking] ==> 	 0.0000 [ 00000003 ]
+
+npu_inst finished! total time: 0.000111 sec, npu-time = 0.299158 sec [0260F14B]
+--------
+sp-224-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0001 [ 00000005 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.9988 [ 0000FFB0 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.1880 [ 00003020 ]
+
+npu_inst finished! total time: 0.000112 sec, npu-time = 0.299318 sec [026144CD]
+--------
+sp-226-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFE ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000104 sec, npu-time = 0.298930 sec [02607AAB]
+--------
+sp-210-label-2.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0050 [ 00000146 ]
+[waving] ==> 	 0.3393 [ 000056DC ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000003 ]
+[walking] ==> 	 0.3083 [ 00004EEA ]
+
+npu_inst finished! total time: 0.000115 sec, npu-time = 0.298837 sec [02604A45]
+--------
+sp-243-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000001 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.9946 [ 0000FEA1 ]
+[standing] ==> 	 0.0011 [ 00000048 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000108 sec, npu-time = 0.299102 sec [0260D43F]
+--------
+sp-231-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000001 ]
+[waving] ==> 	 0.0008 [ 00000034 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.9993 [ 0000FFCF ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000109 sec, npu-time = 0.299278 sec [02612FC1]
+--------
+sp-240-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.9998 [ 0000FFF3 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000104 sec, npu-time = 0.299118 sec [0260DCA3]
+--------
+sp-205-label-2.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0070 [ 000001CD ]
+[waving] ==> 	 1.0000 [ 0000FFFD ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000104 sec, npu-time = 0.299411 sec [026174FD]
+--------
+sp-222-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000001 ]
+[waving] ==> 	 0.8776 [ 0000E0A8 ]
+[squat] ==> 	 0.9713 [ 0000F8A7 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0002 [ 0000000F ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.299126 sec [0260E097]
+--------
+sp-215-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000001 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 1.0000 [ 0000FFFF ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0124 [ 0000032D ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.298581 sec [025FC4B9]
+--------
+sp-225-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000001 ]
+[squat] ==> 	 0.0006 [ 00000029 ]
+[standing] ==> 	 0.8089 [ 0000CF16 ]
+[walking] ==> 	 0.9399 [ 0000F09D ]
+
+npu_inst finished! total time: 0.000118 sec, npu-time = 0.298891 sec [0260666D]
+--------
+sp-235-label-2.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000003 ]
+[null] ==> 	 0.0000 [ 00000001 ]
+[waving] ==> 	 0.9997 [ 0000FFEC ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0013 [ 00000056 ]
+[walking] ==> 	 0.0000 [ 00000002 ]
+
+npu_inst finished! total time: 0.000109 sec, npu-time = 0.299289 sec [026135B3]
+--------
+sp-228-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0210 [ 00000563 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0004 [ 00000017 ]
+[squat] ==> 	 0.0005 [ 00000023 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.9324 [ 0000EEB3 ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.298763 sec [026023A7]
+--------
+sp-207-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.5166 [ 00008443 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000001 ]
+[squat] ==> 	 0.7753 [ 0000C67C ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0007 [ 0000002C ]
+
+npu_inst finished! total time: 0.000240 sec, npu-time = 0.298793 sec [0260330D]
+--------
+sp-203-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFD ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0003 [ 00000011 ]
+
+npu_inst finished! total time: 0.000147 sec, npu-time = 0.299033 sec [0260B06F]
+--------
+sp-229-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.9999 [ 0000FFF8 ]
+[waving] ==> 	 0.0000 [ 00000003 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000106 sec, npu-time = 0.299231 sec [0261177D]
+--------
+sp-219-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0042 [ 00000114 ]
+
+npu_inst finished! total time: 0.000111 sec, npu-time = 0.299007 sec [0260A2D1]
+--------
+sp-230-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.0001 [ 00000005 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 1.0000 [ 0000FFFF ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0001 [ 00000009 ]
+
+npu_inst finished! total time: 0.000155 sec, npu-time = 0.299283 sec [0261324D]
+--------
+sp-211-label-4.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 0.0052 [ 00000155 ]
+[waving] ==> 	 0.0341 [ 000008B9 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000110 sec, npu-time = 0.299163 sec [0260F40B]
+--------
+sp-217-label-3.list
+-------- * * * ------------
+[bending] ==> 	 0.9993 [ 0000FFD0 ]
+[null] ==> 	 0.0000 [ 00000000 ]
+[waving] ==> 	 0.0009 [ 0000003E ]
+[squat] ==> 	 0.0002 [ 0000000E ]
+[standing] ==> 	 0.0000 [ 00000003 ]
+[walking] ==> 	 0.0016 [ 00000067 ]
+
+npu_inst finished! total time: 0.000120 sec, npu-time = 0.299024 sec [0260ABB1]
+--------
+sp-204-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFE ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000126 sec, npu-time = 0.298991 sec [02609A75]
+--------
+sp-212-label-0.list
+-------- * * * ------------
+[bending] ==> 	 0.6722 [ 0000AC16 ]
+[null] ==> 	 0.0000 [ 00000001 ]
+[waving] ==> 	 0.0161 [ 00000422 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000107 sec, npu-time = 0.299278 sec [02613013]
+--------
+sp-238-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFE ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0024 [ 0000009E ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000111 sec, npu-time = 0.299018 sec [0260A871]
+--------
+sp-241-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0003 [ 00000013 ]
+
+npu_inst finished! total time: 0.000107 sec, npu-time = 0.299030 sec [0260AEB9]
+--------
+sp-227-label-1.list
+-------- * * * ------------
+[bending] ==> 	 0.0000 [ 00000000 ]
+[null] ==> 	 1.0000 [ 0000FFFF ]
+[waving] ==> 	 0.0000 [ 00000000 ]
+[squat] ==> 	 0.0000 [ 00000000 ]
+[standing] ==> 	 0.0000 [ 00000000 ]
+[walking] ==> 	 0.0000 [ 00000000 ]
+
+npu_inst finished! total time: 0.000113 sec, npu-time = 0.298614 sec [025FD5C1]
