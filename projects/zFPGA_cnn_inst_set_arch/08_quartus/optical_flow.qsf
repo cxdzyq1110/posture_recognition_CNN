@@ -1,0 +1,88 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+# Date created = 11:48:38  February 05, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		optical_flow_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEBA6U23I7
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:48:38  FEBRUARY 05, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../00_user_logic/cnn_inst_executor.v
+set_global_assignment -name SDC_FILE ../04_scripts/DE10_NANO_SOC.sdc
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_lpm_div_ip/alt_lpm_div_ip.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_64b_16w/alt_fifo_64b_16w.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_64b_8w/alt_fifo_64b_8w.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_32b_64w/alt_fifo_32b_64w.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_32b_16w/alt_fifo_32b_16w.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_32b_8w/alt_fifo_32b_8w.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_4b_4096w/alt_fifo_4b_4096w.qip
+set_global_assignment -name VERILOG_FILE ../00_user_logic/top.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/ssram_sim.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/ssram_controller.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/mux_ddr_access.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/mt9d111_sim.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/mt9d111_controller.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/int_cordic_tanh_sigm_rtl.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/int_cordic_exp_rtl.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/cnn_inst_parser.v
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_64b_2048w/alt_fifo_64b_2048w.qip
+set_global_assignment -name VERILOG_FILE ../00_user_logic/int_cordic_core.v
+set_global_assignment -name QIP_FILE ../01_altera_ip/cordic_factor_Kn_rom_ip/cordic_factor_Kn_rom_ip.qip
+set_global_assignment -name INCLUDE_FILE ../00_user_logic/vga_config.inc
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_fifo_16b_4096w/alt_fifo_16b_4096w.qip
+set_global_assignment -name VERILOG_FILE ../00_user_logic/OpticalFlowLK.v
+set_global_assignment -name VERILOG_FILE ../00_user_logic/RGB565_YUV422.v
+set_global_assignment -name QIP_FILE ../01_altera_ip/line_buf_800pts_1line/line_buf_800pts_1line.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/IxIyIt_800pts_4line/IxIyIt_800pts_4line.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/alt_lpm_divider/alt_lpm_divider.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/cnn_scfifo_256pts/cnn_scfifo_256pts.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/cordic_factor_exp_rom_ip/cordic_factor_exp_rom_ip.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/cordic_int_part_exp_rom_ip/cordic_int_part_exp_rom_ip.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/cnn_ram_256pts/cnn_ram_256pts.qip
+set_global_assignment -name QIP_FILE ../01_altera_ip/cnn_inst_ram/cnn_inst_ram.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
