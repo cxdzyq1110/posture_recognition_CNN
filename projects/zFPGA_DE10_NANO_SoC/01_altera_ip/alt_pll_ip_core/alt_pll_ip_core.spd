@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="alt_pll_ip_core_sim/alt_pll_ip_core.vo" type="VERILOG" />
+ <topLevel name="alt_pll_ip_core" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

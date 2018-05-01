@@ -1,0 +1,167 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system --output-directory=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system --report-file=bsf:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\soc_system.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEBA6U23I7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system.qsys
+Progress: Loading soc_system/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 14.0]
+Progress: Parameterizing module clk_1
+Progress: Adding hps_0 [altera_hps 14.0]
+Progress: Parameterizing module hps_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding led_pio [altera_avalon_pio 14.0]
+Progress: Parameterizing module led_pio
+Progress: Adding avalon_f2h [altera_merlin_master_translator 14.0]
+Progress: Parameterizing module avalon_f2h
+Progress: Adding avalon_h2f [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module avalon_h2f
+Progress: Adding avalon_h2f_lw [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module avalon_h2f_lw
+Progress: Adding h2f_ram [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module h2f_ram
+Progress: Adding h2f_lw_ram [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module h2f_lw_ram
+Progress: Adding cnn_inst_info [altera_avalon_pio 14.0]
+Progress: Parameterizing module cnn_inst_info
+Progress: Adding video_block_number [altera_avalon_pio 14.0]
+Progress: Parameterizing module video_block_number
+Progress: Adding pd_bbox_frame [altera_avalon_pio 14.0]
+Progress: Parameterizing module pd_bbox_frame
+Progress: Adding pd_bbox_h2f_lw [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module pd_bbox_h2f_lw
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram1 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram2 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: soc_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: soc_system.cnn_inst_info: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.video_block_number: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system --output-directory=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\synthesis --file-set=QUARTUS_SYNTH --report-file=html:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\soc_system.html --report-file=sopcinfo:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system.sopcinfo --report-file=cmp:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\soc_system.cmp --report-file=qip:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\synthesis\soc_system.qip --report-file=svd:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\synthesis\soc_system.svd --report-file=regmap:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\synthesis\soc_system.regmap --report-file=xml:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\soc_system.xml --report-file=debuginfo:D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system\synthesis\soc_system.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEBA6U23I7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:\ProjectFiles\Posture_Recognition\projects\DE10_NANO_SoC_GHRD_ip_create\01_altera_ip\soc_system\soc_system.qsys --language=VERILOG
+Progress: Loading soc_system/soc_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.0]
+Progress: Parameterizing module clk_0
+Progress: Adding clk_1 [clock_source 14.0]
+Progress: Parameterizing module clk_1
+Progress: Adding hps_0 [altera_hps 14.0]
+Progress: Parameterizing module hps_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 14.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding led_pio [altera_avalon_pio 14.0]
+Progress: Parameterizing module led_pio
+Progress: Adding avalon_f2h [altera_merlin_master_translator 14.0]
+Progress: Parameterizing module avalon_f2h
+Progress: Adding avalon_h2f [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module avalon_h2f
+Progress: Adding avalon_h2f_lw [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module avalon_h2f_lw
+Progress: Adding h2f_ram [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module h2f_ram
+Progress: Adding h2f_lw_ram [altera_avalon_onchip_memory2 14.0]
+Progress: Parameterizing module h2f_lw_ram
+Progress: Adding cnn_inst_info [altera_avalon_pio 14.0]
+Progress: Parameterizing module cnn_inst_info
+Progress: Adding video_block_number [altera_avalon_pio 14.0]
+Progress: Parameterizing module video_block_number
+Progress: Adding pd_bbox_frame [altera_avalon_pio 14.0]
+Progress: Parameterizing module pd_bbox_frame
+Progress: Adding pd_bbox_h2f_lw [altera_merlin_slave_translator 14.0]
+Progress: Parameterizing module pd_bbox_h2f_lw
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram1 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram2 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: soc_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: soc_system.cnn_inst_info: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.video_block_number: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master avalon_f2h.avalon_universal_master_0 and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: hps_0: "Running  for module: hps_0"
+Warning: hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: hps_0: Setting the slave port width of interface f2h_sdram1 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Warning: hps_0: Setting the slave port width of interface f2h_sdram2 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: sysid_qsys_0: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: led_pio: Starting RTL generation for module 'soc_system_led_pio'
+Info: led_pio:   Generation command is [exec F:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I F:/altera/14.0/quartus/bin64/perl/lib -I F:/altera/14.0/quartus/sopc_builder/bin/europa -I F:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I F:/altera/14.0/quartus/sopc_builder/bin -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_led_pio --dir=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0037_led_pio_gen/ --quartus_dir=F:/altera/14.0/quartus --verilog --config=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0037_led_pio_gen//soc_system_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'soc_system_led_pio'
+Info: led_pio: "soc_system" instantiated altera_avalon_pio "led_pio"
+Info: avalon_f2h: "soc_system" instantiated altera_merlin_master_translator "avalon_f2h"
+Info: avalon_h2f: "soc_system" instantiated altera_merlin_slave_translator "avalon_h2f"
+Info: h2f_ram: Starting RTL generation for module 'soc_system_h2f_ram'
+Info: h2f_ram:   Generation command is [exec F:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I F:/altera/14.0/quartus/bin64/perl/lib -I F:/altera/14.0/quartus/sopc_builder/bin/europa -I F:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I F:/altera/14.0/quartus/sopc_builder/bin -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_h2f_ram --dir=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0040_h2f_ram_gen/ --quartus_dir=F:/altera/14.0/quartus --verilog --config=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0040_h2f_ram_gen//soc_system_h2f_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: h2f_ram: Done RTL generation for module 'soc_system_h2f_ram'
+Info: h2f_ram: "soc_system" instantiated altera_avalon_onchip_memory2 "h2f_ram"
+Info: h2f_lw_ram: Starting RTL generation for module 'soc_system_h2f_lw_ram'
+Info: h2f_lw_ram:   Generation command is [exec F:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I F:/altera/14.0/quartus/bin64/perl/lib -I F:/altera/14.0/quartus/sopc_builder/bin/europa -I F:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I F:/altera/14.0/quartus/sopc_builder/bin -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_h2f_lw_ram --dir=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0041_h2f_lw_ram_gen/ --quartus_dir=F:/altera/14.0/quartus --verilog --config=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0041_h2f_lw_ram_gen//soc_system_h2f_lw_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: h2f_lw_ram: Done RTL generation for module 'soc_system_h2f_lw_ram'
+Info: h2f_lw_ram: "soc_system" instantiated altera_avalon_onchip_memory2 "h2f_lw_ram"
+Info: cnn_inst_info: Starting RTL generation for module 'soc_system_cnn_inst_info'
+Info: cnn_inst_info:   Generation command is [exec F:/altera/14.0/quartus/bin64/perl/bin/perl.exe -I F:/altera/14.0/quartus/bin64/perl/lib -I F:/altera/14.0/quartus/sopc_builder/bin/europa -I F:/altera/14.0/quartus/sopc_builder/bin/perl_lib -I F:/altera/14.0/quartus/sopc_builder/bin -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/14.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_cnn_inst_info --dir=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0042_cnn_inst_info_gen/ --quartus_dir=F:/altera/14.0/quartus --verilog --config=C:/Users/xdche/AppData/Local/Temp/alt7639_2194207760723602616.dir/0042_cnn_inst_info_gen//soc_system_cnn_inst_info_component_configuration.pl  --do_build_sim=0  ]
+Info: cnn_inst_info: Done RTL generation for module 'soc_system_cnn_inst_info'
+Info: cnn_inst_info: "soc_system" instantiated altera_avalon_pio "cnn_inst_info"
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: mm_interconnect_2: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: sysid_qsys_0_control_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "sysid_qsys_0_control_slave_agent"
+Info: sysid_qsys_0_control_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "sysid_qsys_0_control_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sysid_qsys_0_control_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sysid_qsys_0_control_slave_burst_adapter"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: limiter_pipeline: "mm_interconnect_0" instantiated altera_avalon_st_pipeline_stage "limiter_pipeline"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_f2h_avalon_universal_master_0_agent: "mm_interconnect_1" instantiated altera_merlin_master_agent "avalon_f2h_avalon_universal_master_0_agent"
+Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_1" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_2" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: h2f_ram_s1_rsp_width_adapter: "mm_interconnect_2" instantiated altera_merlin_width_adapter "h2f_ram_s1_rsp_width_adapter"
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/01_altera_ip/soc_system/soc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: soc_system: Done "soc_system" with 43 modules, 99 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

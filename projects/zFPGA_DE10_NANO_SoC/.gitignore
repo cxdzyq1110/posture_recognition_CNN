@@ -1,3 +1,9 @@
-01_altera_ip
-08_quartus
+
+08_quartus/db
+08_quartus/greybox_tmp
+08_quartus/incremental_db
+08_quartus/incremental_db
+08_quartus/output_files
+08_quartus/synplify_pr_dl_work
+08_quartus/DE10_NANO_SoC_GHRD.qxp
 05_modelsim
