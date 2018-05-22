@@ -272,3 +272,7 @@ P.S. 	试图将调用DDR读写控制器IP核的mux-port模块改写成burst传输的模式（假设最大的
 	1. 将NPU模块的读写两路请求端口分配到f2s0/f2h两路中；不要影响光流计算/HDMI输出;
 	2. 将HDMI输出调整，右下角输出action-word，之后留给判别结果；
 	3. 显示的顶部留给[posture recognition system]作为标语title
+	
+-----------
+2018-05-23
+	测试github能不能上传
