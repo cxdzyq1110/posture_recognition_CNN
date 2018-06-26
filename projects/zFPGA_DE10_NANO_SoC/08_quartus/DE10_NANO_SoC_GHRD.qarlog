@@ -1,28 +1,28 @@
-Quartus II Archive log --	D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/DE10_NANO_SoC_GHRD.qarlog
+Quartus II Archive log --	F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/DE10_NANO_SoC_GHRD.qarlog
 
-Archive:	D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/DE10_NANO_SoC_GHRD.qar
-Date:		Thu Apr 19 13:43:25 2018
+Archive:	F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/DE10_NANO_SoC_GHRD.qar
+Date:		Tue Jun 26 22:23:41 2018
 Quartus II 64-Bit		14.0.0 Build 200 06/17/2014 SJ Full Version
 
 	=========== Files Selected: ===========
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.atm
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.cfm
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.dfp
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.dpi
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.hdbx
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.logdb
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.map.kpt
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.qxp_info
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.rcf
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.cmp.scidsc
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.atm
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.dpi
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.hdbx
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.logdb
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.map.kpt
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.qxp_info
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/pr_dl.map.scidsc
-D:/ProjectFiles/Posture_Recognition/projects/DE10_NANO_SoC_GHRD_ip_create/08_quartus/db/tmp_qic_export_dir_82/qic_export_file_list
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.atm
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.cfm
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.dfp
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.dpi
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.hdbx
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.logdb
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.map.kpt
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.qxp_info
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.rcf
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.cmp.scidsc
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.atm
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.dpi
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.hdbx
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.logdb
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.map.kpt
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.qxp_info
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/pr_dl.map.scidsc
+F:/MyProjects/posture_recognition_CNN/projects/zFPGA_DE10_NANO_SoC/08_quartus/db/tmp_qic_export_dir_2/qic_export_file_list
 	======= Total: 18 files to archive =======
 
 	================ Status: ===============

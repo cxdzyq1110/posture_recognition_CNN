@@ -166,16 +166,16 @@ module video_process
 	begin
 		// 原始视频（左上角区域）
 		if(MON_H_rd>=0 && MON_H_rd<(`VGA_H_WIDTH>>>1) && MON_V_rd>=0 && MON_V_rd<(`VGA_V_WIDTH>>>1))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 1'B0})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 1'B0}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
 		// 光流计算结果（左下角区域）
 		else if(MON_H_rd>=0 && MON_H_rd<(`VGA_H_WIDTH>>>1) && MON_V_rd>=(`VGA_V_WIDTH>>>1) && MON_V_rd<(`VGA_V_WIDTH))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 1'B1})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 1'B0}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Optical & 6'H03, 21'H00_0000}) + 32'H0780_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Optical & 6'H03, 21'H00_0000}) + 32'H0780_0000;
 		// 行人检测结果（加框）(右上角区域)
 		else if(MON_H_rd>=(`VGA_H_WIDTH>>>1) && MON_H_rd<(`VGA_H_WIDTH) && MON_V_rd>=0 && MON_V_rd<(`VGA_V_WIDTH>>>1))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 1'B0})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 1'B1}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_PD_Bbox & 6'H01, 21'H00_0000}) + 32'H0980_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_PD_Bbox & 6'H01, 21'H00_0000}) + 32'H0980_0000;
 		// 预留
 		else if(MON_H_rd>=(`VGA_H_WIDTH>>>1) && MON_H_rd<(`VGA_H_WIDTH) && MON_V_rd>=(`VGA_V_WIDTH>>>1) && MON_V_rd<(`VGA_V_WIDTH))
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 1'B1})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 1'B1}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
 		else 
 			ADV7513_FrameAddr = 32'HFFFF_FFFF;
 	end
@@ -296,17 +296,17 @@ module video_process
 	always @(posedge DDR_READ_CLK)
 	begin
 		line_buffer_wrreq <= DDR_READ_DATA_VALID;
-		if(SW[0])
+		if(SW[3])
 			line_buffer_data <= DDR_READ_DATA[31]? {16{DDR_READ_DATA[30]}} : DDR_READ_DATA[15:0];	// 光流法/原始视频
 		else 
 		begin
-			if(wrpix_cnt>=0 && wrpix_cnt<200)
+			if(wrpix_cnt>=0 && wrpix_cnt<((`VGA_H_WIDTH>>>2)*1))
 				line_buffer_data <= {5'B11111, 6'B000000, 5'B00000};
-			else if(wrpix_cnt>=200 && wrpix_cnt<400)
+			else if(wrpix_cnt>=((`VGA_H_WIDTH>>>2)*1) && wrpix_cnt<((`VGA_H_WIDTH>>>2)*2))
 				line_buffer_data <= {5'B00000, 6'B111111, 5'B00000};
-			else if(wrpix_cnt>=400 && wrpix_cnt<600)
+			else if(wrpix_cnt>=((`VGA_H_WIDTH>>>2)*2) && wrpix_cnt<((`VGA_H_WIDTH>>>2)*3))
 				line_buffer_data <= {5'B00000, 6'B000000, 5'B11111};
-			else if(wrpix_cnt>=600 && wrpix_cnt<800)
+			else if(wrpix_cnt>=((`VGA_H_WIDTH>>>2)*3) && wrpix_cnt<((`VGA_H_WIDTH>>>2)*4))
 				line_buffer_data <= {5'B11111, 6'B000000, 5'B11111};
 			else
 				line_buffer_data <= {5'B00000, 6'B000000, 5'B00000};

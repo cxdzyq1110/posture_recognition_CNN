@@ -34,6 +34,7 @@ module adv7513_controller(
 	input			[15:0]	ACTION_TITLE;
 	//
 	/*				HA		HF 		HS  	HB 		VA 		VF  	VS  	VB		PCLK
+	640x480@60Hz	640 	16		96		48		480		1		3		16 		25MHz
 	800x600@75Hz	800		16		80		160		600		1		3		21		50MHz	// VGA
 	800x600@75Hz	800		56		120		64		600		37		6		23		50MHz	// HDMI
 	1024x768@60Hz	1024	24		136		160		768		3		6		29		65MHz
@@ -42,15 +43,15 @@ module adv7513_controller(
 	1280x1024		1280	48		112		248		1024	1		3		38		108MHz
 	1920x1080		1920	28		12		40		1080	3		4		18		130MHz
 	*/
-	parameter 	HA = 11'D1024;		// 行显示，有效
-	parameter 	HF = 11'D24;		// 行消隐，前肩
-	parameter	HS = 11'D136;		// 行同步
-	parameter	HB = 11'D160;		// 行消隐，后尖
+	parameter 	HA = 11'D640;		// 行显示，有效
+	parameter 	HF = 11'D16;		// 行消隐，前肩
+	parameter	HS = 11'D96;		// 行同步
+	parameter	HB = 11'D48;		// 行消隐，后尖
 	parameter 	HT = (HA+HF+HS+HB);
-	parameter 	VA = 11'D768;		// 场显示，有效
-	parameter 	VF = 11'D3;			// 场消隐，前肩，
-	parameter	VS = 11'D6;			// 场同步
-	parameter	VB = 11'D29;		// 场消隐，后尖
+	parameter 	VA = 11'D480;		// 场显示，有效
+	parameter 	VF = 11'D1;			// 场消隐，前肩，
+	parameter	VS = 11'D3;			// 场同步
+	parameter	VB = 11'D16;		// 场消隐，后尖
 	parameter	VT = (VA+VF+VS+VB);
 
 	always @(posedge ADV7513_PCLK)	

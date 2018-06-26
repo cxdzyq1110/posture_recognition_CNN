@@ -91,7 +91,7 @@
 <generic name="gui_actual_phase_shift7" value="0" />
 <generic name="gui_duty_cycle7" value="50" />
 <generic name="gui_cascade_counter8" value="false" />
-<generic name="gui_output_clock_frequency8" value="20.0" />
+<generic name="gui_output_clock_frequency8" value="16.0" />
 <generic name="gui_divide_factor_c8" value="1" />
 <generic name="gui_actual_output_clock_frequency8" value="0 MHz" />
 <generic name="gui_ps_units8" value="ps" />

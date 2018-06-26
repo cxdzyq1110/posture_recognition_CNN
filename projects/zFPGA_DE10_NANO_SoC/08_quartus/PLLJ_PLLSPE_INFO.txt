@@ -33,8 +33,3 @@ PLLJITTER	NA
 PLLSPEmax	NA
 PLLSPEmin	NA
 
-PLL_Name	alt_pll_ip_core:alt_pll_ip_core_inst|alt_pll_ip_core_0002:alt_pll_ip_core_inst|altera_pll:altera_pll_i|general[7].gpll~PLL_OUTPUT_COUNTER
-PLLJITTER	NA
-PLLSPEmax	NA
-PLLSPEmin	NA
-

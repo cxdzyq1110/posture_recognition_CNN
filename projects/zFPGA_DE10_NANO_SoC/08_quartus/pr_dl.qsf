@@ -499,9 +499,6 @@ set_global_assignment -name PARTITION_COLOR 16777164 -section_id "altera_edge_de
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_SYNTH -section_id "mt9d111_controller:mt9d111_controller_inst"
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "mt9d111_controller:mt9d111_controller_inst"
 set_global_assignment -name PARTITION_COLOR 32896 -section_id "mt9d111_controller:mt9d111_controller_inst"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id "soc_system:u0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "soc_system:u0"
-set_global_assignment -name PARTITION_COLOR 14622752 -section_id "soc_system:u0"
 set_global_assignment -name PARTITION_NETLIST_TYPE POST_SYNTH -section_id "mt9d111_config:mt9d111_config_inst"
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "mt9d111_config:mt9d111_config_inst"
 set_global_assignment -name PARTITION_COLOR 2105567 -section_id "mt9d111_config:mt9d111_config_inst"
@@ -1481,6 +1478,5 @@ set_instance_assignment -name PARTITION_HIERARCHY mt9d1_d09c1 -to "mt9d111_contr
 set_instance_assignment -name PARTITION_HIERARCHY muxdd_af571 -to "mux_ddr_access:mux_ddr_access_f2h_inst" -section_id "mux_ddr_access:mux_ddr_access_f2h_inst"
 set_instance_assignment -name PARTITION_HIERARCHY muxdd_aa801 -to "mux_ddr_access:mux_ddr_access_f2s0_inst" -section_id "mux_ddr_access:mux_ddr_access_f2s0_inst"
 set_instance_assignment -name PARTITION_HIERARCHY muxdd_7e241 -to "mux_ddr_access:mux_ddr_access_f2s1_inst" -section_id "mux_ddr_access:mux_ddr_access_f2s1_inst"
-set_instance_assignment -name PARTITION_HIERARCHY u0_ef7d1 -to "soc_system:u0" -section_id "soc_system:u0"
 set_instance_assignment -name PARTITION_HIERARCHY video_cfeb1 -to "video_process:video_process_inst" -section_id "video_process:video_process_inst"
 set_global_assignment -name SLD_FILE db/cnn_inst_auto_stripped.stp
