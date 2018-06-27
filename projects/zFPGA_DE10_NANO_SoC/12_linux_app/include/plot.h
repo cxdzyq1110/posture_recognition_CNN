@@ -4,9 +4,13 @@
 
 // 绘图 & 加框
 extern void plot_picture_and_bbox(void);
-// 加框的数据
-extern unsigned int add_pd_box(unsigned int HCnt, unsigned int VCnt, unsigned int W, unsigned int H, unsigned S);	// 
-extern unsigned int clear_pd_box(void);	// 
+
+// 
+#define	CAM_H_WIDTH	800
+#define	CAM_V_WIDTH	600
+
+#define VGA_SCALE	4
+#define BBOX_WIDTH	5
 
 // 然后是加上字幕
 #define	bending		0

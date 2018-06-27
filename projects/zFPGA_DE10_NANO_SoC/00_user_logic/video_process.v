@@ -166,16 +166,16 @@ module video_process
 	begin
 		// 原始视频（左上角区域）
 		if(MON_H_rd>=0 && MON_H_rd<(`VGA_H_WIDTH>>>1) && MON_V_rd>=0 && MON_V_rd<(`VGA_V_WIDTH>>>1))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-`VGA_V_BORD, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-`VGA_H_BORD, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
 		// 光流计算结果（左下角区域）
 		else if(MON_H_rd>=0 && MON_H_rd<(`VGA_H_WIDTH>>>1) && MON_V_rd>=(`VGA_V_WIDTH>>>1) && MON_V_rd<(`VGA_V_WIDTH))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Optical & 6'H03, 21'H00_0000}) + 32'H0780_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-`VGA_V_BORD-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-`VGA_H_BORD, 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Optical & 6'H03, 21'H00_0000}) + 32'H0780_0000;
 		// 行人检测结果（加框）(右上角区域)
 		else if(MON_H_rd>=(`VGA_H_WIDTH>>>1) && MON_H_rd<(`VGA_H_WIDTH) && MON_V_rd>=0 && MON_V_rd<(`VGA_V_WIDTH>>>1))	
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_PD_Bbox & 6'H01, 21'H00_0000}) + 32'H0980_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-`VGA_V_BORD, 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-`VGA_H_BORD-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_PD_Bbox & 6'H01, 21'H00_0000}) + 32'H0980_0000;
 		// 预留
 		else if(MON_H_rd>=(`VGA_H_WIDTH>>>1) && MON_H_rd<(`VGA_H_WIDTH) && MON_V_rd>=(`VGA_V_WIDTH>>>1) && MON_V_rd<(`VGA_V_WIDTH))
-			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
+			ADV7513_FrameAddr = ((({32'D0, ({32'D0, MON_V_rd-`VGA_V_BORD-(`VGA_V_WIDTH>>>1), 2'B00})*((`CAM_H_WIDTH))+(({32'D0, MON_H_rd-`VGA_H_BORD-(`VGA_H_WIDTH>>>1), 2'B00}-0))})&32'H1F_FFFF) | {5'D0, ADV7513_FrameFlag_Video&6'H03, 21'H00_0000}) + 32'H0800_0000;
 		else 
 			ADV7513_FrameAddr = 32'HFFFF_FFFF;
 	end

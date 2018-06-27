@@ -86,6 +86,20 @@ module adv7513_controller(
 		ADV7513_DE <= (ADV7513_VCnt<VA && ADV7513_HCnt<HA);
 	end
 	
+	// 再显示区域，需要把边框置为白色
+	wire 	IN_ZONE_0 = ((ADV7513_VCnt>(`VGA_V_BIAS+`VGA_V_BORD) && ADV7513_VCnt<(`VGA_V_BIAS+`VGA_V_BORD+`VGA_V_LENG)) && 
+							(ADV7513_HCnt>(`VGA_H_BIAS+`VGA_H_BORD) && ADV7513_HCnt<(`VGA_H_BIAS+`VGA_H_BORD+`VGA_H_LENG))
+						);	// 左上角
+	wire 	IN_ZONE_1 = ((ADV7513_VCnt>(`VGA_V_BIAS+`VGA_V_BORD) && ADV7513_VCnt<(`VGA_V_BIAS+`VGA_V_BORD+`VGA_V_LENG)) && 
+							(ADV7513_HCnt>(`VGA_H_BIAS+(`VGA_H_WIDTH>>1)+`VGA_H_BORD) && ADV7513_HCnt<(`VGA_H_BIAS+(`VGA_H_WIDTH>>1)+`VGA_H_BORD+`VGA_H_LENG))
+						);	// 右上角
+	wire 	IN_ZONE_2 = ((ADV7513_VCnt>(`VGA_V_BIAS+(`VGA_V_WIDTH>>1)+`VGA_V_BORD) && ADV7513_VCnt<(`VGA_V_BIAS+(`VGA_V_WIDTH>>1)+`VGA_V_BORD+`VGA_V_LENG)) && 
+							(ADV7513_HCnt>(`VGA_H_BIAS+`VGA_H_BORD) && ADV7513_HCnt<(`VGA_H_BIAS+`VGA_H_BORD+`VGA_H_LENG))
+						);	// 左下角
+	wire 	IN_ZONE_3 = ((ADV7513_VCnt>(`VGA_V_BIAS+(`VGA_V_WIDTH>>1)+`VGA_V_BORD) && ADV7513_VCnt<(`VGA_V_BIAS+(`VGA_V_WIDTH>>1)+`VGA_V_BORD+`VGA_V_LENG)) && 
+							(ADV7513_HCnt>(`VGA_H_BIAS+(`VGA_H_WIDTH>>1)+`VGA_H_BORD) && ADV7513_HCnt<(`VGA_H_BIAS+(`VGA_H_WIDTH>>1)+`VGA_H_BORD+`VGA_H_LENG))
+						);	// 右下角
+	wire	IN_BORDER_ZONE = (!IN_ZONE_0 && !IN_ZONE_1 && !IN_ZONE_2 && !IN_ZONE_3);
 	//assign	{ADV7513_R,ADV7513_G,ADV7513_B}=(ADV7513_HCnt<200 && ADV7513_VCnt<200)? 3'B100 : (ADV7513_HCnt<400 && ADV7513_VCnt<(VA-1))? 3'B010: 3'B000;
 	/*******/
 	always @(posedge ADV7513_PCLK)
@@ -117,7 +131,7 @@ module adv7513_controller(
 													(ADV7513_VCnt>=`WORD_V_BIAS && ADV7513_VCnt<(`WORD_V_BIAS+`WORD_V_WIDTH) && ADV7513_HCnt>=(`WORD_H_BIAS) && ADV7513_HCnt<(`WORD_H_BIAS + `WORD_H_WIDTH ))? 
 														ACTION_WORD : 
 													(ADV7513_VCnt>=(`VGA_V_BIAS) && ADV7513_VCnt<(`VGA_V_BIAS + `VGA_V_WIDTH) && ADV7513_HCnt>=(`VGA_H_BIAS) && ADV7513_HCnt<(`VGA_H_BIAS + `VGA_H_WIDTH ))? 
-														ADV7513_DATA: 
+														(IN_BORDER_ZONE? 16'HFFFF : ADV7513_DATA): 
 													(ADV7513_VCnt<VA && ADV7513_HCnt<HA)? 16'HFFFF : 16'H0000;
 		end
 endmodule

@@ -62,9 +62,9 @@ void merge_bbox_task(void)
     // 然后需要考察[cx, cy]周围是否有HOG+SVM行人检测框，用来进行扩充
     // 首先生成待检测区域
     int Tx_min = (cx-of_bbox_shifter_sum[2]/2/of_bbox_shifter_len)<0 ? 0 : cx-of_bbox_shifter_sum[2]/2/of_bbox_shifter_len;
-    int Tx_max = (cx+of_bbox_shifter_sum[2]/2/of_bbox_shifter_len)>(799-10) ? (799-10) : cx+of_bbox_shifter_sum[2]/2/of_bbox_shifter_len;
+    int Tx_max = (cx+of_bbox_shifter_sum[2]/2/of_bbox_shifter_len)>(CAM_H_WIDTH-2*BBOX_WIDTH) ? (CAM_H_WIDTH-2*BBOX_WIDTH) : cx+of_bbox_shifter_sum[2]/2/of_bbox_shifter_len;
     int Ty_min = (cy-of_bbox_shifter_sum[3]/2/of_bbox_shifter_len)<0 ? 0 : cy-of_bbox_shifter_sum[3]/2/of_bbox_shifter_len;
-    int Ty_max = (cy+of_bbox_shifter_sum[3]/2/of_bbox_shifter_len)>(599-10) ? (599-10) : cy+of_bbox_shifter_sum[3]/2/of_bbox_shifter_len;
+    int Ty_max = (cy+of_bbox_shifter_sum[3]/2/of_bbox_shifter_len)>(CAM_V_WIDTH-2*BBOX_WIDTH) ? (CAM_V_WIDTH-2*BBOX_WIDTH) : cy+of_bbox_shifter_sum[3]/2/of_bbox_shifter_len;
     //
     test_bbox[0][0] = Tx_min;
     test_bbox[0][1] = Ty_min;

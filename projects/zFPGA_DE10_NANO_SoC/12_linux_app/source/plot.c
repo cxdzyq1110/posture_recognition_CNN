@@ -41,9 +41,9 @@ void plot_picture_and_bbox(void)
 	//memcpy(bbox_memory_base, video_result_addr, 0x00200000);	// 其实只要拷贝2MB就行啦
     // 其实只要1/4的图像就可以了
     int i, j; int addr;
-    for(i=0; i<600; i=i+2){
-        for(j=1; j<800; j=j+2){
-            addr = 800*i + j;
+    for(i=0; i<CAM_V_WIDTH; i=i+VGA_SCALE){
+        for(j=0; j<CAM_H_WIDTH; j=j+VGA_SCALE){
+            addr = CAM_H_WIDTH*i + j;
             *(unsigned int *)(bbox_memory_base+addr*4) = *(unsigned int *)(video_result_addr+addr*4);
         }
     }
@@ -68,22 +68,22 @@ void plot_picture_and_bbox(void)
 			unsigned bias_addr = 0;
 			// 上下两个横线
 			for(loop_in=0; loop_in<(pd_bbox[loop_count][5]/SCALE); loop_in++){
-				bias_addr = (800*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0])<<2;
+				bias_addr = (CAM_H_WIDTH*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0])<<2;
                 for(j=0; j<pd_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000f800;
 				//memset(bbox_memory_base+bias_addr, 0x00, (pd_bbox[loop_count][2]<<2));
-				bias_addr = (800*(pd_bbox[loop_count][1]+loop_in+pd_bbox[loop_count][3])+pd_bbox[loop_count][0])<<2;
+				bias_addr = (CAM_H_WIDTH*(pd_bbox[loop_count][1]+loop_in+pd_bbox[loop_count][3])+pd_bbox[loop_count][0])<<2;
 				//memset(bbox_memory_base+bias_addr, 0x00, (pd_bbox[loop_count][2]<<2));
                 for(j=0; j<pd_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000f800;
 			}
 			// 然后是左右的竖线
 			for(loop_in=0; loop_in<(pd_bbox[loop_count][3]+pd_bbox[loop_count][5]/SCALE); loop_in++){
-				bias_addr = (800*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0])<<2;
+				bias_addr = (CAM_H_WIDTH*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0])<<2;
 				//memset(bbox_memory_base+bias_addr, 0x00, ((pd_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(pd_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000f800;
-				bias_addr = (800*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0]+pd_bbox[loop_count][2])<<2;
+				bias_addr = (CAM_H_WIDTH*(pd_bbox[loop_count][1]+loop_in)+pd_bbox[loop_count][0]+pd_bbox[loop_count][2])<<2;
 				//memset(bbox_memory_base+bias_addr, 0x00, ((pd_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(pd_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000f800;
@@ -98,22 +98,22 @@ void plot_picture_and_bbox(void)
             unsigned bias_addr = 0;
             // 上下两个横线
             for(loop_in=0; loop_in<(of_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0])<<2;
                 for(j=0; j<of_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000001F;
                 //memset(bbox_memory_base+bias_addr, 0x00, (of_bbox[loop_count][2]<<2));
-                bias_addr = (800*(of_bbox[loop_count][1]+loop_in+of_bbox[loop_count][3])+of_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(of_bbox[loop_count][1]+loop_in+of_bbox[loop_count][3])+of_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, (of_bbox[loop_count][2]<<2));
                 for(j=0; j<of_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000001F;
             }
             // 然后是左右的竖线
             for(loop_in=0; loop_in<(of_bbox[loop_count][3]+of_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((of_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(of_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000001F;
-                bias_addr = (800*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0]+of_bbox[loop_count][2])<<2;
+                bias_addr = (CAM_H_WIDTH*(of_bbox[loop_count][1]+loop_in)+of_bbox[loop_count][0]+of_bbox[loop_count][2])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((of_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(of_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x0000001F;
@@ -128,22 +128,22 @@ void plot_picture_and_bbox(void)
             unsigned bias_addr = 0;
             // 上下两个横线
             for(loop_in=0; loop_in<(test_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0])<<2;
                 for(j=0; j<test_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007FF;
                 //memset(bbox_memory_base+bias_addr, 0x00, (test_bbox[loop_count][2]<<2));
-                bias_addr = (800*(test_bbox[loop_count][1]+loop_in+test_bbox[loop_count][3])+test_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(test_bbox[loop_count][1]+loop_in+test_bbox[loop_count][3])+test_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, (test_bbox[loop_count][2]<<2));
                 for(j=0; j<test_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007FF;
             }
             // 然后是左右的竖线
             for(loop_in=0; loop_in<(test_bbox[loop_count][3]+test_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((test_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(test_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007FF;
-                bias_addr = (800*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0]+test_bbox[loop_count][2])<<2;
+                bias_addr = (CAM_H_WIDTH*(test_bbox[loop_count][1]+loop_in)+test_bbox[loop_count][0]+test_bbox[loop_count][2])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((test_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(test_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007FF;
@@ -158,22 +158,22 @@ void plot_picture_and_bbox(void)
             unsigned bias_addr = 0;
             // 上下两个横线
             for(loop_in=0; loop_in<(final_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0])<<2;
                 for(j=0; j<final_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007E0;
                 //memset(bbox_memory_base+bias_addr, 0x00, (final_bbox[loop_count][2]<<2));
-                bias_addr = (800*(final_bbox[loop_count][1]+loop_in+final_bbox[loop_count][3])+final_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(final_bbox[loop_count][1]+loop_in+final_bbox[loop_count][3])+final_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, (final_bbox[loop_count][2]<<2));
                 for(j=0; j<final_bbox[loop_count][2]; j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007E0;
             }
             // 然后是左右的竖线
             for(loop_in=0; loop_in<(final_bbox[loop_count][3]+final_bbox[loop_count][5]/SCALE); loop_in++){
-                bias_addr = (800*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0])<<2;
+                bias_addr = (CAM_H_WIDTH*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((final_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(final_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007E0;
-                bias_addr = (800*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0]+final_bbox[loop_count][2])<<2;
+                bias_addr = (CAM_H_WIDTH*(final_bbox[loop_count][1]+loop_in)+final_bbox[loop_count][0]+final_bbox[loop_count][2])<<2;
                 //memset(bbox_memory_base+bias_addr, 0x00, ((final_bbox[loop_count][5]/SCALE)<<2));
                 for(j=0; j<(final_bbox[loop_count][5]/SCALE); j++)
                     *(unsigned int *)(bbox_memory_base+bias_addr+4*j) = 0x000007E0;
@@ -190,53 +190,6 @@ void plot_picture_and_bbox(void)
 }
 
 /////////////////////////////////////////////////////
-
-// 清除所有的框
-unsigned int clear_pd_box(void)
-{
-    clock_t start, finish; double duration; 	// 计时用
-	int i, j; 
-	int addr;
-	for(i=0; i<300; i++){
-		for(j=0; j<400; j++){
-			addr = i*400 + j;
-			*(unsigned int *)h2f_lw_bbox_mask_addr = (0<<31)|(pd_bbox_frame<<18)|(addr);
-		}
-	}
-	return 1;
-}
-//
-// 加框的函数
-unsigned int add_pd_box(unsigned int HCnt, unsigned int VCnt, unsigned int W, unsigned int H, unsigned S)
-{
-    clock_t start, finish; double duration; 	// 计时用
-	int i,j;
-	int addr;
-	// 首先是上下两条横线
-	for(i=VCnt; i<VCnt+S; i++){
-		for(j=HCnt; j<HCnt+W+S; j++){
-			addr = i*400 + j;
-			*(unsigned int *)h2f_lw_bbox_mask_addr = (1<<31)|(pd_bbox_frame<<18)|(addr);
-		}
-	}
-	for(i=VCnt+H; i<VCnt+H+S; i++){
-		for(j=HCnt; j<HCnt+W+S; j++){
-			addr = i*400 + j;
-			*(unsigned int *)h2f_lw_bbox_mask_addr = (1<<31)|(pd_bbox_frame<<18)|(addr);
-		}
-	}
-	// 然后是左右两条竖线
-	for(i=VCnt; i<VCnt+H; i++){
-		for(j=HCnt; j<HCnt+S; j++){
-			addr = i*400 + j;
-			*(unsigned int *)h2f_lw_bbox_mask_addr = (1<<31)|(pd_bbox_frame<<18)|(addr);
-		}
-		for(j=HCnt+W; j<HCnt+W+S; j++){
-			addr = i*400 + j;
-			*(unsigned int *)h2f_lw_bbox_mask_addr = (1<<31)|(pd_bbox_frame<<18)|(addr);
-		}
-	}
-}
 
 /////////////////
 // 加上字幕
