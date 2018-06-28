@@ -103,7 +103,7 @@ module DE10_NANO_SoC_GHRD(
 // my codes
 	wire						RESETN = KEY[0];
 	/// generate 3 clocks
-	wire						CLOCK80, CLOCK10, CLOCK125, CLOCK25, CLOCK50, CLOCK35, CLOCK65, CLOCK26, CLOCK16 /* synthesis keep */;
+	wire						CLOCK80, CLOCK10, CLOCK125, CLOCK25, CLOCK50, CLOCK35, CLOCK45, CLOCK26, CLOCK16 /* synthesis keep */;
 	alt_pll_ip_core				alt_pll_ip_core_inst(
 									.refclk(FPGA_CLK2_50),
 									.rst(0),
@@ -113,7 +113,7 @@ module DE10_NANO_SoC_GHRD(
 									.outclk_3(CLOCK25),
 									.outclk_4(CLOCK50),
 									.outclk_5(CLOCK35),
-									.outclk_6(CLOCK65),
+									.outclk_6(CLOCK45),
 									.outclk_7(CLOCK26),
 									.outclk_8(CLOCK16),
 									.locked()
@@ -186,6 +186,7 @@ module DE10_NANO_SoC_GHRD(
 	wire						HOG_SVM_DDR_WRITE_REQ;
 	wire						HOG_SVM_DDR_WRITE_READY;
 	/*
+	*/
 	hog_svm_pd_rtl				hog_svm_pd_rtl_inst(
 									.sys_rst_n(RESETN),
 									.RGB565_PCLK(MT9D111_PCLK),
@@ -200,7 +201,6 @@ module DE10_NANO_SoC_GHRD(
 									.DDR_WRITE_REQ(HOG_SVM_DDR_WRITE_REQ),
 									.DDR_WRITE_READY(HOG_SVM_DDR_WRITE_READY)
 								);
-	*/
 	// 光流计算
 	// OpticalFlowLK
 	wire	[5:0]				MT9D111_FRAME_PREV;
@@ -219,6 +219,7 @@ module DE10_NANO_SoC_GHRD(
 	wire	[31:0]				OPTICAL_DDR_READ_DATA;
 	wire						OPTICAL_DDR_READ_DATA_VALID;
 	/*
+	*/
 	OpticalFlowLK				OpticalFlowLK_inst(
 									.sys_rst_n(RESETN),
 									.RGB565_PCLK(MT9D111_PCLK),
@@ -243,7 +244,6 @@ module DE10_NANO_SoC_GHRD(
 									.DDR_READ_DATA(OPTICAL_DDR_READ_DATA),
 									.DDR_READ_DATA_VALID(OPTICAL_DDR_READ_DATA_VALID)
 								);
-	*/
 	// adv7513
 	wire						ADV7513_SCL;
 	wire						ADV7513_INT;
@@ -341,12 +341,12 @@ module DE10_NANO_SoC_GHRD(
 	wire						CNN_DDR_READ_READY;
 	wire	[31:0]				CNN_DDR_READ_DATA;
 	wire						CNN_DDR_READ_DATA_VALID;
-	wire						cnn_inst_clk = CLOCK25;
+	wire						cnn_inst_clk = CLOCK45;
     wire    [31:0]              cnn_inst_addr;
     wire    [127:0]             cnn_inst_q;
     wire                        cnn_inst_start = (cnn_inst_en && cnn_inst==128'D2);
 	
-	/*
+	
 	cnn_inst_executor			cnn_inst_executor_inst(
 									.clk(cnn_inst_clk),
 									.rst_n(RESETN & HPS2FPGA_RESETN),
@@ -368,7 +368,7 @@ module DE10_NANO_SoC_GHRD(
 									.DDR_READ_DATA(CNN_DDR_READ_DATA),
 									.DDR_READ_DATA_VALID(CNN_DDR_READ_DATA_VALID)
 								);
-    */            
+               
     // 存储CNN指令的地址
     reg     [31:0]      cnn_inst_wraddr;
     always @(posedge cnn_inst_clk)

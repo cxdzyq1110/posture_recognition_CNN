@@ -1465,12 +1465,16 @@ set_global_assignment -name LL_HEIGHT 8 -section_id "mux_ddr_access:mux_ddr_acce
 set_global_assignment -name LL_ORIGIN X35_Y53 -section_id "mux_ddr_access:mux_ddr_access_f2h_inst"
 set_instance_assignment -name LL_MEMBER_OF "mux_ddr_access:mux_ddr_access_f2h_inst" -to "mux_ddr_access:mux_ddr_access_f2h_inst" -section_id "mux_ddr_access:mux_ddr_access_f2h_inst"
 set_global_assignment -name QIP_FILE ../01_altera_ip/word_title_rom/word_title_rom.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_SYNTH -section_id "cnn_inst_executor:cnn_inst_executor_inst"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "cnn_inst_executor:cnn_inst_executor_inst"
+set_global_assignment -name PARTITION_COLOR 11924661 -section_id "cnn_inst_executor:cnn_inst_executor_inst"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY adv75_0cfc1 -to "adv7513_config:adv7513_config_inst" -section_id "adv7513_config:adv7513_config_inst"
 set_instance_assignment -name PARTITION_HIERARCHY adv75_4faa1 -to "adv7513_controller:adv7513_controller_inst" -section_id "adv7513_controller:adv7513_controller_inst"
 set_instance_assignment -name PARTITION_HIERARCHY pulse_95271 -to "altera_edge_detector:pulse_cold_reset" -section_id "altera_edge_detector:pulse_cold_reset"
 set_instance_assignment -name PARTITION_HIERARCHY pulse_42a51 -to "altera_edge_detector:pulse_debug_reset" -section_id "altera_edge_detector:pulse_debug_reset"
 set_instance_assignment -name PARTITION_HIERARCHY pulse_d4761 -to "altera_edge_detector:pulse_warm_reset" -section_id "altera_edge_detector:pulse_warm_reset"
+set_instance_assignment -name PARTITION_HIERARCHY cnnin_d24a1 -to "cnn_inst_executor:cnn_inst_executor_inst" -section_id "cnn_inst_executor:cnn_inst_executor_inst"
 set_instance_assignment -name PARTITION_HIERARCHY hpsre_3b4a1 -to "hps_reset:hps_reset_inst" -section_id "hps_reset:hps_reset_inst"
 set_instance_assignment -name PARTITION_HIERARCHY jitte_51591 -to "jitter_killer:jitter_killer_KEY1" -section_id "jitter_killer:jitter_killer_KEY1"
 set_instance_assignment -name PARTITION_HIERARCHY mt9d1_e6801 -to "mt9d111_config:mt9d111_config_inst" -section_id "mt9d111_config:mt9d111_config_inst"

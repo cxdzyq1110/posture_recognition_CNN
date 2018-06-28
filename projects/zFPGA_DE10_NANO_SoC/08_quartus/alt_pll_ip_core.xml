@@ -4,7 +4,7 @@
 <generic name="debug_use_rbc_taf_method" value="false" />
 <generic name="device_family" value="Cyclone V" />
 <generic name="device" value="Unknown" />
-<generic name="gui_device_speed_grade" value="7" />
+<generic name="gui_device_speed_grade" value="1" />
 <generic name="gui_pll_mode" value="Integer-N PLL" />
 <generic name="gui_reference_clock_frequency" value="50.0" />
 <generic name="gui_channel_spacing" value="0.0" />

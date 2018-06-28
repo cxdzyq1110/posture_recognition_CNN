@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 14.0 200 win32 2018.04.18.17:00:22
+# ACDS 14.0 200 win32 2018.06.28.21:34:09
 
 # ----------------------------------------
 # Auto-generated simulation script
@@ -34,7 +34,7 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "F:/altera/14.0/quartus/"
+  set QUARTUS_INSTALL_DIR "D:/altera/14.0/quartus/"
 }
 
 # ----------------------------------------
@@ -59,22 +59,7 @@ ensure_lib          ./libraries/work/
 vmap       work     ./libraries/work/
 vmap       work_lib ./libraries/work/
 if ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] {
-  ensure_lib                       ./libraries/altera_ver/           
-  vmap       altera_ver            ./libraries/altera_ver/           
-  ensure_lib                       ./libraries/lpm_ver/              
-  vmap       lpm_ver               ./libraries/lpm_ver/              
-  ensure_lib                       ./libraries/sgate_ver/            
-  vmap       sgate_ver             ./libraries/sgate_ver/            
-  ensure_lib                       ./libraries/altera_mf_ver/        
-  vmap       altera_mf_ver         ./libraries/altera_mf_ver/        
-  ensure_lib                       ./libraries/altera_lnsim_ver/     
-  vmap       altera_lnsim_ver      ./libraries/altera_lnsim_ver/     
-  ensure_lib                       ./libraries/cyclonev_ver/         
-  vmap       cyclonev_ver          ./libraries/cyclonev_ver/         
-  ensure_lib                       ./libraries/cyclonev_hssi_ver/    
-  vmap       cyclonev_hssi_ver     ./libraries/cyclonev_hssi_ver/    
-  ensure_lib                       ./libraries/cyclonev_pcie_hip_ver/
-  vmap       cyclonev_pcie_hip_ver ./libraries/cyclonev_pcie_hip_ver/
+  
 }
 
 
@@ -83,18 +68,7 @@ if ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] {
 alias dev_com {
   echo "\[exec\] dev_com"
   if ![ string match "*ModelSim ALTERA*" [ vsim -version ] ] {
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v"                     -work altera_ver           
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"                              -work lpm_ver              
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"                                 -work sgate_ver            
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"                             -work altera_mf_ver        
-    vlog -sv "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                         -work altera_lnsim_ver     
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v"          -work cyclonev_ver         
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v"      -work cyclonev_ver         
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_atoms.v"                        -work cyclonev_ver         
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v"     -work cyclonev_hssi_ver    
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_hssi_atoms.v"                   -work cyclonev_hssi_ver    
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v" -work cyclonev_pcie_hip_ver
-    vlog     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_pcie_hip_atoms.v"               -work cyclonev_pcie_hip_ver
+    
   }
 }
 
@@ -102,21 +76,21 @@ alias dev_com {
 # Compile the design files in correct order
 alias com {
   echo "\[exec\] com"
-  vlog "$QSYS_SIMDIR/alt_pll_ip_core.vo"
+  
 }
 
 # ----------------------------------------
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim -t ps $ELAB_OPTIONS -L work -L work_lib -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
+  eval vsim -t ps $ELAB_OPTIONS -L work -L work_lib $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with novopt option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -novopt -t ps $ELAB_OPTIONS -L work -L work_lib -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
+  eval vsim -novopt -t ps $ELAB_OPTIONS -L work -L work_lib $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
